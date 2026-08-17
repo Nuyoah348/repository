@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version)",
+      "PowerShell(pip show *)",
+      "PowerShell(\\(Get-Command python\\).Source; python -c \"import sys; print\\(sys.executable\\)\")",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; cd \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pip install -r requirements.txt -q 2>&1; & $pythonPath -m pytest tests/test_task_api.py -v --tb=short 2>&1)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; cd \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pytest tests/test_task_api.py -v --tb=short 2>&1)",
+      "PowerShell(Stop-Process *)",
+      "PowerShell(ffmpeg *)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; cd \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; $proc = Start-Process -FilePath $pythonPath -ArgumentList \"-c\", \"from app.main import app; print\\('Import OK'\\)\" -PassThru -NoNewWindow -Wait; $proc.ExitCode)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; Set-Location \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -c \"from app.main import app; print\\('Import OK'\\)\" 2>&1)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; Set-Location \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pytest tests/test_task_api.py -v --tb=short 2>&1)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; Set-Location \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pytest tests/test_phase2.py -v --tb=short 2>&1)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; Set-Location \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pytest tests/test_phase2.py::TestPipelineService::test_pipeline_task_not_found -v --tb=short 2>&1)",
+      "PowerShell($pythonPath = \"D:\\\\ANACONDA\\\\python.exe\"; Set-Location \"C:\\\\Users\\\\17956\\\\Desktop\\\\数字人\\\\digital-human-mvp\\\\backend\"; & $pythonPath -m pytest tests/ -v --tb=short 2>&1)",
+      "PowerShell(npm *)",
+      "Bash(D:/ANACONDA/python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://127.0.0.1:8000/health)",
+      "Bash(D:/ANACONDA/python.exe scripts/integration_test.py)",
+      "Bash(PYTHONIOENCODING=utf-8 D:/ANACONDA/python.exe scripts/integration_test.py)",
+      "Bash(curl *)",
+      "Bash(PYTHONIOENCODING=utf-8 D:/ANACONDA/python.exe scripts/stress_test.py)",
+      "Bash(D:/ANACONDA/python.exe -m pytest tests/ -v --tb=short)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://127.0.0.1:8000/api/voices)",
+      "Bash(curl -s http://127.0.0.1:8000/api/avatars)",
+      "Bash(npx vite *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "PowerShell(Start-Process \"http://localhost:5173\")",
+      "Bash(D:/ANACONDA/python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload)",
+      "PowerShell(Get-Process *)"
+    ]
+  }
+}
